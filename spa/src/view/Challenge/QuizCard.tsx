@@ -14,9 +14,9 @@ export const QuizCard: React.FunctionComponent<Props> = ({ quizItem }) => {
 
   return (
     <div className="container">
-      <p>{quizItem.visible}</p>
-      {!visible && <button onClick={reveal}>display</button>}
-      {visible && <p>{quizItem.hidden}</p>}
+      <p data-e2e="challenge-content">{quizItem.visible}</p>
+      {!visible && <button data-e2e='challenge-display-button' onClick={reveal}>display</button>}
+      {visible && <p data-e2e="challenge-translation">{quizItem.hidden}</p>}
     </div>
   );
 };

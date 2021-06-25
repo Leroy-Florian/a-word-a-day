@@ -31,10 +31,10 @@ export const Detail: React.FunctionComponent<Props> = () => {
         <React.Fragment>
             <div>
                 <label>Anglais</label>
-                <input className="input is-small" type="text" placeholder={addWord} onChange={(e) => setWord(e.target.value)}></input>
+                <input data-e2e='detail-english-input' className="input is-small" type="text" placeholder={addWord} onChange={(e) => setWord(e.target.value)}></input>
                 <label>Français</label>
-                <input className="input is-small" type="text" placeholder={addTranslatedWord} onChange={(e) => setTranslatedWord(e.target.value)}></input>
-                <button type="submit"
+                <input data-e2e='detail-french-input' className="input is-small" type="text" placeholder={addTranslatedWord} onChange={(e) => setTranslatedWord(e.target.value)}></input>
+                <button data-e2e='detail-add-button'  type="submit"
                     className="button is-success is-rounded"
                     style={{ float: "right", marginTop: "200px" }}
                     onClick={addWordInStorage}

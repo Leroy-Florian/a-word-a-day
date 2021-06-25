@@ -3,6 +3,8 @@ import { e2eSelector } from "../util/selector";
 import { COUNTER_VALUE, COUNTER_INCREMENT } from "./selectors";
 
 export class Counter {
+
+
   public async increment(): Promise<void> {
     await t.click(e2eSelector(COUNTER_INCREMENT));
   }

@@ -42,7 +42,7 @@ export const RandomSelection: React.FunctionComponent<Props> = ({
       <div className="column is-half is-offset-one-quarter">
         <QuizCard quizItem={quizItem} key={quizItem.hidden} />
       </div>
-      <button onClick={onClick}>shuffle</button>
+      <button data-e2e='challenge-shuffle-button' onClick={onClick}>shuffle</button>
     </div>
   );
 };
